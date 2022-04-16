@@ -2,7 +2,7 @@
 
 ## usb
 
-Check connect:
+### Check connect:
 
 ```
 ifconfig
@@ -11,9 +11,14 @@ iwconfig
 
 ![image](https://user-images.githubusercontent.com/90561566/163680598-fff970c5-959a-45f5-a0f5-d448f5b712e1.png)
 
+### Setup OS:
 
+See this: 
+- Command: https://github.com/davidbombal/Kali-Linux/blob/main/TP-Link%20TL-WN722N%20adapter
+- Setup: https://github.com/aircrack-ng/rtl8188eus
+- Tool setup: https://github.com/sonvan1811/rtl8188eus
 
-See information:
+### See information:
 
 ```
 lsusb
