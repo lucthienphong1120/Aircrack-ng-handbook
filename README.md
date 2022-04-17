@@ -129,19 +129,10 @@ sudo make && make install
 reboot
 ```
 
+## Monitor mode
 
+Go to [monitor.md](/monitor.md)
 
-
-
-
-
-### Check mode status
-
-```
-iw dev
-```
-
-![image](https://user-images.githubusercontent.com/90561566/163680743-8684357c-ae0b-4d04-a7a2-f06d1aea7d4d.png)
 
 
 
