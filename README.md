@@ -24,10 +24,11 @@ lsusb -D /dev/bus/usb/<bus>/<device>
 
 ### Setup OS:
 
-See this: 
-- Command: https://github.com/davidbombal/Kali-Linux/blob/main/TP-Link%20TL-WN722N%20adapter
-- Setup: https://github.com/aircrack-ng/rtl8188eus
-- Tool setup: https://github.com/sonvan1811/rtl8188eus
+You can refer to the following links:
+
+- Command Install: https://github.com/davidbombal/Kali-Linux/blob/main/TP-Link%20TL-WN722N%20adapter
+- Install Driver: https://github.com/aircrack-ng/rtl8188eus
+- Tool Auto Install: https://github.com/lucthienphong1120/rtl8188eus
 
 ### Linux header:
 
