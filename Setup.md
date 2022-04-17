@@ -1,8 +1,4 @@
-# Aircrack-ng handbook
-
-You can go to other handbook files to see if you already know
-
-## Setup usb wifi
+# Setup usb wifi
 
 I use tp-link wn725n (chip set rtl8188eus)
 
