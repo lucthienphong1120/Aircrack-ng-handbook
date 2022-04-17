@@ -100,10 +100,15 @@ make all
 make install
 ```
 
-After compiling, you can see a name of the chip.ko file is stored in there.
+If success, you can will a name of the <chip>.ko file is stored in there.
 
+### Load the Driver
 
-
+```
+sudo cp chip.ko /lib/modules/<kernel version>/kernel/drivers/net/wireless/
+sudo depmod -a
+sudo modprobe chip
+```
 
 
 
