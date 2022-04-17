@@ -1,9 +1,5 @@
 # [Aircrack-ng](https://www.aircrack-ng.org/)
 
-> Currently only vietsub version is available
-> 
-> Hiện mới chỉ có bản vietsub
-
 ## Sơ lược
 
 Aircrack-ng là bộ công cụ dùng để pentest mạng không dây, crack wep và dò khóa wpa/wpa2-psk.
