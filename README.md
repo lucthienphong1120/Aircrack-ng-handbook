@@ -131,7 +131,7 @@ reboot
 
 ## Monitor mode
 
-Go to [monitor.md](/monitor.md)
+Go to [monitor.md](/Monitor.md)
 
 
 
