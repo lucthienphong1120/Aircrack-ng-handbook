@@ -28,7 +28,12 @@ Detected access points, packet capture, capturing raw 802.11 frames, collecting 
 
 ```
 airodump-ng <options> <interface>[,<interface>,...]
+```
 
+<details>
+<summary>More</summary>
+
+```
 Options:
     --ivs                 : Save only captured IVs
     --gpsd                : Use GPSd
@@ -86,6 +91,8 @@ You can make it capture on other/specific channel(s) by using:
     --help                : Displays this usage screen
 ```
 
+</details>
+
 ### [Aireplay-ng](https://www.aircrack-ng.org/doku.php?id=aireplay-ng)
 
 dùng để tạo ra gói tin inject gửi tới AP nhằm nhận các gói ARP phản hồi.
@@ -94,7 +101,12 @@ Generate traffic, deauthentications, fake authentications, Interactive packet re
 
 ```
 aireplay-ng <options> <interface>
+```
 
+<details>
+<summary>More</summary>
+
+```
 Filter options:
 
     -b bssid : MAC address, Access Point
@@ -144,6 +156,8 @@ Attack modes (Numbers can still be used):
     --test : injection test (-9)
 ```
 
+</details>
+    
 ## [Packetforge-ng](https://www.aircrack-ng.org/doku.php?id=packetforge-ng)
 
 dùng để gửi các gói tin giả trên tới AP để nhận phản hồi.
@@ -152,7 +166,12 @@ Create encrypted packets such as arp requests, UDP, ICMP and custom packets
 
 ```
 packetforge-ng <mode> <options>
+```
+                    
+<details>
+<summary>More</summary>
 
+```
 Forge options
 
     -p <fctrl> : set frame control word (hex)
@@ -180,6 +199,8 @@ Modes
     --custom : build a custom packet (-9)
 ```
 
+</details>
+
 ## [Airolib-ng](https://www.aircrack-ng.org/doku.php?id=airolib-ng)
 
 tạo ra một cơ sở dữ liệu khóa đã được tính toán trước, làm đơn giản hóa quá trình crack key
@@ -188,7 +209,12 @@ Store and manage essid and password lists, compute PMKs, WPA/WPA2 cracking
 
 ```
 airolib <database> <operation> [options]
+```
+      
+<details>
+<summary>More</summary>
 
+```
 Operations:
 
     --stats - Output some information about the database.
@@ -201,6 +227,8 @@ Operations:
     --import {essid|passwd} {file} - Import a text flat file as a list of either ESSIDs or passwords and create the database if it does not exist. This file must contain one essid or password per line. Lines should be terminated with line feeds. Meaning press "enter" at the end of each line when entering the values.
 ```
 
+</details>
+    
 ## [Aircrack-ng](https://www.aircrack-ng.org/doku.php?id=aircrack-ng)
 
 crack wep hay dò khóa đều dùng nó
@@ -209,7 +237,12 @@ Aircrack-ng is an 802.11 WEP and WPA/WPA2-PSK key cracking program.
 
 ```
 aircrack-ng [options] <capture file(s)>
-
+```
+    
+<details>
+<summary>More</summary>
+    
+```
 Common options
 
     -a	amode	Force attack mode (1 = static WEP, 2 = WPA/WPA2-PSK)
@@ -266,6 +299,7 @@ SIMD Selection
     --simd-list	Shows a list of the SIMD optimizations available
 ```
 
+</details>
 
 
 
