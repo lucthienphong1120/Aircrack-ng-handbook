@@ -2,6 +2,17 @@
 
 I use tp-link wn725n (chip set rtl8188eus)
 
+### Is your wifi support monitor mode ?
+
+```
+iw dev
+iw phy phy0 info
+```
+
+Here will show all your wifi card parameters
+
+![image](https://user-images.githubusercontent.com/90561566/163820140-91bfaa6a-0382-47f5-b075-8c07fc9a0778.png)
+
 ### Check connect:
 
 ```
