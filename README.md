@@ -2,8 +2,8 @@
 
 You can go to other handbook files to see if you already know it
 
-- [Aircrack-ng-tools.md](/Aircrack-ng-tools.md)
-- [Monitor.md](/Monitor.md)
-- [Setup.md](/Setup.md)
-- [Tips.md](/Tips.md)
-- [Usage.md](/Usage.md)
+- [All-tools.md](/Aircrack-ng-tools.md) (I'm sure it will be a very useful document)
+- [Monitor.md](/Monitor.md) (About monitor mode, how to turn on/off, check)
+- [Setup.md](/Setup.md) (configuring your wifi card, sometimes it won't be easy)
+- [Tips.md](/Tips.md) (Some attack tips I know)
+- [Usage.md](/Usage.md) (Basic usage)
