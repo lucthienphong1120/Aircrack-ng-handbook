@@ -2,7 +2,12 @@
 
 ## Sơ lược
 
-[Aircrack-ng](https://www.aircrack-ng.org/) là bộ công cụ dùng để pentest mạng không dây, crack wep và dò khóa wpa/wpa2-psk.
+[Aircrack-ng](https://www.aircrack-ng.org/) is a complete suite of tools to assess WiFi network security.
+
+- Monitoring: Packet capture and export of data to text files for further processing by third party tools
+- Attacking: Replay attacks, deauthentication, fake access points and others via packet injection
+- Testing: Checking WiFi cards and driver capabilities (capture and injection)
+- Cracking: WEP and WPA1/2 PSK
 
 Aircrack-ng có rất nhiều công cụ, một số là:
 
