@@ -93,7 +93,7 @@ You can make it capture on other/specific channel(s) by using:
 
 dùng để tạo ra gói tin inject gửi tới AP nhằm nhận các gói ARP phản hồi.
 
-Generate traffic, deauthentications, fake authentications, Interactive packet replay, hand-crafted ARP request injection and ARP-request reinjection
+Generate traffic, deauthentications, fake authentications, Interactive packet replay, hand-crafted ARP request injection and ARP-request reinjection,...
 
 ```
 aireplay-ng <options> <interface>
@@ -154,6 +154,61 @@ Attack modes (Numbers can still be used):
 
 </details>
     
+## [Airbase-ng](https://www.aircrack-ng.org/doku.php?id=airbase-ng)              
+                    
+tạo điểm truy cập giả mạo
+Caffe Latte WEP client attack, Hirte WEP client attack, WPA/WPA2 handshake, act as an ad-hoc Access Point, act as a full Access Point,...
+
+```
+airbase-ng <options> <replay interface>
+```
+                    
+<details>
+<summary>More</summary>
+    
+```
+Options:
+
+    -a bssid : set Access Point MAC address
+    -i iface : capture packets from this interface
+    -w WEP key : use this WEP key to encrypt/decrypt packets
+    -h MAC : source mac for MITM mode
+    -f disallow : disallow specified client MACs (default: allow)
+    -W 0|1 : [don't] set WEP flag in beacons 0|1 (default: auto)
+    -q : quiet (do not print statistics)
+    -v : verbose (print more messages) (long --verbose)
+    -M : M-I-T-M between [specified] clients and bssids (NOT CURRENTLY IMPLEMENTED)
+    -A : Ad-Hoc Mode (allows other clients to peer) (long --ad-hoc)
+    -Y in|out|both : external packet processing
+    -c channel : sets the channel the AP is running on
+    -X : hidden ESSID (long --hidden)
+    -s : force shared key authentication
+    -S : set shared key challenge length (default: 128)
+    -L : Caffe-Latte attack (long --caffe-latte)
+    -N : Hirte attack (cfrag attack), creates arp request against wep client (long –cfrag)
+    -x nbpps : number of packets per second (default: 100)
+    -y : disables responses to broadcast probes
+    -0 : set all WPA,WEP,open tags. can't be used with -z & -Z
+    -z type : sets WPA1 tags. 1=WEP40 2=TKIP 3=WRAP 4=CCMP 5=WEP104
+    -Z type : same as -z, but for WPA2
+    -V type : fake EAPOL 1=MD5 2=SHA1 3=auto
+    -F prefix : write all sent and received frames into pcap file
+    -P : respond to all probes, even when specifying ESSIDs
+    -I interval : sets the beacon interval value in ms
+    -C seconds : enables beaconing of probed ESSID values (requires -P)
+
+Filter options:
+
+    --bssid <MAC> : BSSID to filter/use (short -b)
+    --bssids <file> : read a list of BSSIDs out of that file (short -B)
+    --client <MAC> : MAC of client to accept (short -d)
+    --clients <file> : read a list of MACs out of that file (short -D)
+    --essid <ESSID> : specify a single ESSID (short -e)
+    --essids <file> : read a list of ESSIDs out of that file (short -E)
+```
+    
+</details>
+                    
 ## [Packetforge-ng](https://www.aircrack-ng.org/doku.php?id=packetforge-ng)
 
 dùng để gửi các gói tin giả trên tới AP để nhận phản hồi.
@@ -223,6 +278,38 @@ Operations:
     --import {essid|passwd} {file} - Import a text flat file as a list of either ESSIDs or passwords and create the database if it does not exist. This file must contain one essid or password per line. Lines should be terminated with line feeds. Meaning press "enter" at the end of each line when entering the values.
 ```
 
+</details>
+    
+## [Airoscript-ng](https://www.aircrack-ng.org/doku.php?id=airoscript-ng)    
+
+tự động hóa mọi công đoạn, bạn chỉ việc đưa vào mac AP, chọn kiểu tấn công và ngồi chờ
+
+interface to interact with Aicrack-ng and easy WEP and WPA networks attacks, allow to save time from writing commands
+    
+```
+airoscript-ng [options]
+```
+    
+<details>
+<summary>More</summary>
+  
+```
+Options
+    
+    -t	terminal	Specify terminal (xterm or screen)
+    -c	none	Launches an interface selection menu (requires -pzenity)
+    -w	wireless_card	Specify wifi card
+    -b	file	Writes a csv file with network data
+    -m	mac_mode	Change mac to fakemac before everything else. (mac_mode = fakemac or realmac)
+    -a	none	Automatic mode
+    -n	regex	Filter SSID by regex
+    -x	none	Autoconfigure network after automatic crack (requires -a)
+    -z	none	Don't scan automatically at start
+    -p	plugin file	Load plugin at start
+    -v	none	Verbose & debug mode
+    -h	none	Displays this usage screen
+```
+    
 </details>
     
 ## [Aircrack-ng](https://www.aircrack-ng.org/doku.php?id=aircrack-ng)
