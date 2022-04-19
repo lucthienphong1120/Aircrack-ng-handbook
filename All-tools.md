@@ -389,8 +389,24 @@ SIMD Selection
 
 </details>
 
+## Other tools
 
-
+- Airodump-ng-oui-update
+- Airserv-ng
+- Airtun-ng
+- Besside-ng
+- Easside-ng
+- Tkiptun-ng
+- Wesside-ng
+- Airdecap-ng
+- Airdecloak-ng
+- Besside-ng-crawler
+- Buddy-ng
+- Ivstools
+- Kstats
+- Makeivs-ng
+- Wpaclean
+- Airventriloquist
 
 
 
