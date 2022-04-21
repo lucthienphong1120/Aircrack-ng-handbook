@@ -21,6 +21,18 @@ Enable monitor mode, kill network managers, go back managed mode, show the inter
 airmon-ng <start|stop> <interface> [channel] or airmon-ng <check|check kill>
 ```
 
+More
+<details>
+
+```
+<start|stop> indicates if you wish to start or stop the interface. (Mandatory)
+<interface> specifies the interface. (Mandatory)
+[channel] optionally set the card to a specific channel.
+<check|check kill> "check" will show any processes that might interfere with the aircrack-ng suite. It is strongly recommended that these processes be eliminated prior to using the aircrack-ng suite. "check kill" will check and kill off processes that might interfere with the aircrack-ng suite. For “check kill” see
+```
+
+</details>
+
 ### [Airodump-ng](https://www.aircrack-ng.org/doku.php?id=airodump-ng)
 
 dùng để bắt gói tin trong mạng wifi
