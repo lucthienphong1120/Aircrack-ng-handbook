@@ -31,8 +31,8 @@ Detected access points, packet capture, capturing raw 802.11 frames, collecting 
 airodump-ng <options> <interface>[,<interface>,...]
 ```
 
+More
 <details>
-<summary>More</summary>
 
 ```
 Options:
@@ -104,8 +104,8 @@ Generate traffic, deauthentications, fake authentications, Interactive packet re
 aireplay-ng <options> <interface>
 ```
 
+More
 <details>
-<summary>More</summary>
 
 ```
 Filter options:
@@ -168,8 +168,8 @@ Caffe Latte WEP client attack, Hirte WEP client attack, WPA/WPA2 handshake, act 
 airbase-ng <options> <replay interface>
 ```
                     
+More
 <details>
-<summary>More</summary>
     
 ```
 Options:
@@ -223,9 +223,9 @@ Create encrypted packets such as arp requests, UDP, ICMP and custom packets
 ```
 packetforge-ng <mode> <options>
 ```
-                    
+
+More
 <details>
-<summary>More</summary>
 
 ```
 Forge options
@@ -267,8 +267,8 @@ Store and manage essid and password lists, compute PMKs, WPA/WPA2 cracking
 airolib <database> <operation> [options]
 ```
       
+More
 <details>
-<summary>More</summary>
 
 ```
 Operations:
@@ -295,8 +295,8 @@ interface to interact with Aicrack-ng and easy WEP and WPA networks attacks, all
 airoscript-ng [options]
 ```
     
+More
 <details>
-<summary>More</summary>
   
 ```
 Options
@@ -327,8 +327,8 @@ Aircrack-ng is an 802.11 WEP and WPA/WPA2-PSK key cracking program.
 aircrack-ng [options] <capture file(s)>
 ```
     
+More
 <details>
-<summary>More</summary>
     
 ```
 Common options
