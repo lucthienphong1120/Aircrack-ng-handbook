@@ -10,6 +10,6 @@ You can jump to other files if you already know
 
 ## See also
 
-Install driver for chipset [rtl8188eus](https://github.com/lucthienphong1120/rtl8188eus)
+> Install driver for chipset [rtl8188eus](https://github.com/lucthienphong1120/rtl8188eus)
 
-Install driver for chipset [rtl8188fu](https://github.com/lucthienphong1120/rtl8188fu)
+> Install driver for chipset [rtl8188fu](https://github.com/lucthienphong1120/rtl8188fu)
