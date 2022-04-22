@@ -7,3 +7,7 @@ You can jump to other files if you already know
 - [All-tools.md](/All-tools.md) (I'm sure it will be a very useful document)
 - [Usage.md](/Usage.md) (Basic usage)
 - [Tips.md](/Tips.md) (Some attack tips I know)
+
+## See also
+
+Install for chipset [rtl8188eus](https://github.com/lucthienphong1120/rtl8188eus)
