@@ -11,6 +11,8 @@ In this example
 airodump-ng mon0
 ```
 
+![image](https://user-images.githubusercontent.com/90561566/166110658-56663408-8ef9-4681-a5d1-4e7ec4bd3562.png)
+
 ## [Deauthentication](https://www.aircrack-ng.org/doku.php?id=deauthentication)
 
 You can try it: https://github.com/lucthienphong1120/xDeauth
@@ -39,6 +41,13 @@ airodump-ng -c 6 -w out --bssid 00:13:10:30:24:9C mon0
 aireplay-ng -0 10 -a 00:13:10:30:24:9C mon0
 aireplay-ng -3 -b 00:13:10:30:24:9C -h 00:09:5B:EB:C5:2B mon0
 ```
+
+## Brute force tools
+
+Aircrack often uses brute force with some other tools as follows:
+
+- [cupp](https://github.com/lucthienphong1120/cupp)
+- 
 
 
 
