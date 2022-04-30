@@ -47,6 +47,7 @@ aireplay-ng -3 -b 00:13:10:30:24:9C -h 00:09:5B:EB:C5:2B mon0
 Aircrack often uses brute force with some other tools as follows:
 
 - [cupp](https://github.com/lucthienphong1120/cupp)
+- /usr/share/wordlists/rockyou.txt.gz
 - 
 
 
