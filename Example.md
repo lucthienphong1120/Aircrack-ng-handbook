@@ -76,6 +76,8 @@ but i will use database to speed up the attack
 
 it will take more time to set up the database (but it will be much faster than regular crack)
 
+you should only use it if you create a permanent database for crack because it will take a long time (or the passlist is not too long)
+
 install sqlite3 `sudo apt install sqlite3`
 
 create a file `essid.txt` this write name of target wifi
