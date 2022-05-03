@@ -419,6 +419,7 @@ SIMD Selection
 - Makeivs-ng
 - Wpaclean
 - Airventriloquist
+- [Airdriver-ng](https://www.aircrack-ng.org/doku.php?id=airdriver-ng)
 - ...
 
 
