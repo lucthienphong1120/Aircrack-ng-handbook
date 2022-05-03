@@ -404,12 +404,12 @@ SIMD Selection
 ## Other tools
 
 - Airodump-ng-oui-update
-- Airserv-ng
-- Airtun-ng
-- Besside-ng
-- Easside-ng
-- Tkiptun-ng
-- Wesside-ng
+- [Airserv-ng](https://www.aircrack-ng.org/doku.php?id=airserv-ng)
+- [Airtun-ng](https://www.aircrack-ng.org/doku.php?id=airtun-ng)
+- [Besside-ng](https://www.aircrack-ng.org/doku.php?id=besside-ng)
+- [Easside-ng](https://www.aircrack-ng.org/doku.php?id=easside-ng)
+- [Tkiptun-ng](https://www.aircrack-ng.org/doku.php?id=tkiptun-ng)
+- [Wesside-ng](https://www.aircrack-ng.org/doku.php?id=wesside-ng)
 - [Airdecap-ng](https://www.aircrack-ng.org/doku.php?id=airdecap-ng)
 - [Airdecloak-ng](https://www.aircrack-ng.org/doku.php?id=airdecloak-ng)
 - Besside-ng-crawler
@@ -420,7 +420,11 @@ SIMD Selection
 - Wpaclean
 - Airventriloquist
 - [Airdriver-ng](https://www.aircrack-ng.org/doku.php?id=airdriver-ng)
+- [Airdrop-ng](https://www.aircrack-ng.org/doku.php?id=airdrop-ng)
+- [Airgraph-ng](https://www.aircrack-ng.org/doku.php?id=airgraph-ng)
+- [Wlan-ng](https://www.aircrack-ng.org/doku.php?id=wlan-ng)
 - ...
+
 
 
 
