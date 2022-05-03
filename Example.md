@@ -74,6 +74,8 @@ aircrack-ng -w password.txt out*.cap
 
 but i will use database to speed up the attack
 
+it will take more time to set up the database (but it will be much faster than regular crack)
+
 install sqlite3 `sudo apt install sqlite3`
 
 create a file `essid.txt` this write name of target wifi
