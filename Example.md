@@ -56,9 +56,9 @@ the password is 8 numbers (i think it contains in his birthday) and 1 character 
 
 you can also use [Cupp](https://github.com/lucthienphong1120/cupp) to make such inferences
 
-![image](https://user-images.githubusercontent.com/90561566/166432950-8e1e639f-a889-47e9-83eb-be9c8282a237.png)
+![image](https://user-images.githubusercontent.com/90561566/166604507-5c291bf0-6961-4a15-8c52-cf5faf0b749f.png)
 
-the output file about 7,6 GB and 8 hundred thousand passwords
+the output file about 11,5 GB and 1,2 billion passwords
 
 ---
 
@@ -98,13 +98,19 @@ airolib-ng crackwpa --batch
 ![image](https://user-images.githubusercontent.com/90561566/166454564-9b6cd253-74a0-4304-b94e-988a3e92f825.png)
 
 
+now crack with database, you will be surprised
 
+```
+aircrack-ng -r crackwpa out*.cap
+```
 
+crack speed is about 20 GB/s
 
+![image](https://user-images.githubusercontent.com/90561566/166604633-ee3faa85-3062-4374-8ae2-c21dc838f1e9.png)
 
+done! there is the password
 
-
-
+![image](https://user-images.githubusercontent.com/90561566/166604265-0cbf138a-c7bb-4bbc-af23-da89aeb94b50.png)
 
 
 
