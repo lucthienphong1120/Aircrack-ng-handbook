@@ -73,7 +73,6 @@ airolib-ng crackwpa --import essid essid.txt
 airolib-ng crackwpa --stats
 airolib-ng crackwpa --clean all
 airolib-ng crackwpa --batch
-airolib-ng crackwpa --verify all
 aircrack-ng -r crackwpa out*.cap
 ```
 
