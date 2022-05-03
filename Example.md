@@ -85,12 +85,16 @@ create a file `essid.txt` this write name of target wifi
 ```
 airolib-ng crackwpa --import passwd password.txt
 airolib-ng crackwpa --import essid essid.txt
-airolib-ng crackwpa --stats
-airolib-ng crackwpa --clean all
-airolib-ng crackwpa --batch
 ```
 
 ![image](https://user-images.githubusercontent.com/90561566/166435872-44a73959-3784-41c3-849a-5c1aa823dcd4.png)
+
+```
+airolib-ng crackwpa --batch
+```
+
+![image](https://user-images.githubusercontent.com/90561566/166454564-9b6cd253-74a0-4304-b94e-988a3e92f825.png)
+
 
 
 
