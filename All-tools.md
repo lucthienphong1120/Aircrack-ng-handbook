@@ -21,7 +21,6 @@ Enable monitor mode, kill network managers, go back managed mode, show the inter
 airmon-ng <start|stop> <interface> [channel] or airmon-ng <check|check kill>
 ```
 
-More
 <details>
 
 ```
@@ -43,7 +42,6 @@ Detected access points, packet capture, capturing raw 802.11 frames, collecting 
 airodump-ng <options> <interface>[,<interface>,...]
 ```
 
-More
 <details>
 
 ```
@@ -116,7 +114,6 @@ Generate traffic, deauthentications, fake authentications, Interactive packet re
 aireplay-ng <options> <interface>
 ```
 
-More
 <details>
 
 ```
@@ -170,19 +167,19 @@ Attack modes (Numbers can still be used):
 ```
 
 </details>
-    
-## [Airbase-ng](https://www.aircrack-ng.org/doku.php?id=airbase-ng)              
-                    
+
+## [Airbase-ng](https://www.aircrack-ng.org/doku.php?id=airbase-ng)
+
 tạo điểm truy cập giả mạo
+
 Caffe Latte WEP client attack, Hirte WEP client attack, WPA/WPA2 handshake, act as an ad-hoc Access Point, act as a full Access Point,...
 
 ```
 airbase-ng <options> <replay interface>
 ```
-                    
-More
+
 <details>
-    
+
 ```
 Options:
 
@@ -223,9 +220,9 @@ Filter options:
     --essid <ESSID> : specify a single ESSID (short -e)
     --essids <file> : read a list of ESSIDs out of that file (short -E)
 ```
-    
+
 </details>
-                    
+
 ## [Packetforge-ng](https://www.aircrack-ng.org/doku.php?id=packetforge-ng)
 
 dùng để gửi các gói tin giả trên tới AP để nhận phản hồi.
@@ -236,7 +233,6 @@ Create encrypted packets such as arp requests, UDP, ICMP and custom packets
 packetforge-ng <mode> <options>
 ```
 
-More
 <details>
 
 ```
@@ -278,8 +274,7 @@ Store and manage essid and password lists, compute PMKs, WPA/WPA2 cracking
 ```
 airolib <database> <operation> [options]
 ```
-      
-More
+
 <details>
 
 ```
@@ -296,23 +291,22 @@ Operations:
 ```
 
 </details>
-    
+
 ## [Airoscript-ng](https://www.aircrack-ng.org/doku.php?id=airoscript-ng)    
 
 tự động hóa mọi công đoạn, bạn chỉ việc đưa vào mac AP, chọn kiểu tấn công và ngồi chờ
 
 interface to interact with Aicrack-ng and easy WEP and WPA networks attacks, allow to save time from writing commands
-    
+
 ```
 airoscript-ng [options]
 ```
-    
-More
+
 <details>
-  
+
 ```
 Options
-    
+
     -t	terminal	Specify terminal (xterm or screen)
     -c	none	Launches an interface selection menu (requires -pzenity)
     -w	wireless_card	Specify wifi card
@@ -338,10 +332,9 @@ Aircrack-ng is an 802.11 WEP and WPA/WPA2-PSK key cracking program.
 ```
 aircrack-ng [options] <capture file(s)>
 ```
-    
-More
+
 <details>
-    
+
 ```
 Common options
 
@@ -424,6 +417,7 @@ SIMD Selection
 - [Airgraph-ng](https://www.aircrack-ng.org/doku.php?id=airgraph-ng)
 - [Wlan-ng](https://www.aircrack-ng.org/doku.php?id=wlan-ng)
 - ...
+
 
 
 
