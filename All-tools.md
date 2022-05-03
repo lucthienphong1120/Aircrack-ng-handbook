@@ -410,8 +410,8 @@ SIMD Selection
 - Easside-ng
 - Tkiptun-ng
 - Wesside-ng
-- Airdecap-ng
-- Airdecloak-ng
+- [Airdecap-ng](https://www.aircrack-ng.org/doku.php?id=airdecap-ng)
+- [Airdecloak-ng](https://www.aircrack-ng.org/doku.php?id=airdecloak-ng)
 - Besside-ng-crawler
 - Buddy-ng
 - Ivstools
