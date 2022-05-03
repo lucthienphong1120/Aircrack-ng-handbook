@@ -6,7 +6,7 @@ You can jump to other files if you already know
 - [Monitor-mode.md](/Monitor-mode.md) (About monitor mode, how to turn on/off, check)
 - [All-tools.md](/All-tools.md) (I'm sure it will be a very useful document)
 - [Usage.md](/Usage.md) (Basic usage)
-- [Tips.md](/Tips.md) (Some attack tips I know)
+- [Example.md](/Tips.md) (Some example my attack)
 
 ## See also
 
