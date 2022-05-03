@@ -54,6 +54,8 @@ because it's going to be a very, very large file, so i'm going to reveal that
 
 the password is 8 numbers (i think it contains in his birthday) and 1 character (i think it contains in his name)
 
+you can also use [Cupp](https://github.com/lucthienphong1120/cupp) to make such inferences
+
 ![image](https://user-images.githubusercontent.com/90561566/166432950-8e1e639f-a889-47e9-83eb-be9c8282a237.png)
 
 the output file about 7,6 GB and 8 hundred thousand passwords
