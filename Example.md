@@ -68,7 +68,7 @@ now you can crack wpa with
 aircrack-ng -w password.txt out*.cap
 ```
 
-![image](https://user-images.githubusercontent.com/90561566/166422150-4ae8f0bd-47a0-4d57-9ddf-5f7905228535.png)
+![image](https://user-images.githubusercontent.com/90561566/166444763-a0cb15e0-309f-430e-bc6d-ce92e7863f0e.png)
 
 ---
 
