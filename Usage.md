@@ -72,6 +72,7 @@ airolib-ng crackwpa --import passwd password.txt
 airolib-ng crackwpa --import essid essid.txt
 airolib-ng crackwpa --stats # to check information about your database before batch
 airolib-ng crackwpa --clean all # to clean the database from old junk and integrity check
+(you can skip 2 lines above)
 airolib-ng crackwpa --batch
 aircrack-ng -r crackwpa out*.cap
 ```
