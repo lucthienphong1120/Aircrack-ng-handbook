@@ -1,6 +1,8 @@
-## Example crack wpa attack speed with airolib-ng, aircrack-ng
+## Example crack wpa attack with aircrack-ng
 
 i use tp-link wn725n and on parrotOS, the name of it is ridiculous
+
+connect your card wifi and check
 
 ```
 iwconfig
