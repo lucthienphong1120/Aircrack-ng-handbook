@@ -104,13 +104,9 @@ now crack with database, you will be surprised
 aircrack-ng -r crackwpa out*.cap
 ```
 
-crack speed is about 20 GB/s
+done! there is the password (crack speed is about 36 GB/s)
 
-![image](https://user-images.githubusercontent.com/90561566/166604633-ee3faa85-3062-4374-8ae2-c21dc838f1e9.png)
-
-done! there is the password
-
-![image](https://user-images.githubusercontent.com/90561566/166604265-0cbf138a-c7bb-4bbc-af23-da89aeb94b50.png)
+![image](https://user-images.githubusercontent.com/90561566/166684325-e337e6cd-f376-4172-91a2-617a80a3156c.png)
 
 
 
