@@ -8,7 +8,7 @@ In this example
 - `out` is the filename to capture the WPA handshake
 - `password.txt` is the filename to brute force
 - `password.txt` is the file contains name of target network
-- `crackwpa` is the file you write target network name in
+- `crackwpa` is the database name for cracking password
 
 ## Scan network around
 
