@@ -176,6 +176,9 @@ aireplay-ng -4 -b 00:14:6C:7E:40:80 mon0
 aireplay-ng -6 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B -D mon0
 ```
 
+## [ARP amplification with packetforge-ng](https://www.aircrack-ng.org/doku.php?id=arp_amplification)
+
+Read more: https://www.aircrack-ng.org/doku.php?id=arp_amplification
 
 
 
