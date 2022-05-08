@@ -1,6 +1,6 @@
-## Example crack wpa attack with aircrack-ng
+# Example crack wpa attack with aircrack-ng
 
-i use tp-link wn725n and on parrotOS, the name of it is ridiculous
+i use tp-link wn725n (chipset rtl8188eus) and parrotOS, the name of it is ridiculous
 
 connect your card wifi and check
 
