@@ -6,7 +6,7 @@ You can jump to other files if you already know
 - [Monitor-mode.md](/Monitor-mode.md) (About monitor mode, how to turn on/off, check)
 - [All-tools.md](/All-tools.md) (I'm sure it will be a very useful document)
 - [Use-attacks.md](/Use-attacks.md) (All usage of attacks by aircrack-ng)
-- [Crack-wpa-example.md](/Crack-wpa-example.md) (Example how did I crack the wifi)
+- [Crack-wpa-example.md](/Crack-wpa-example.md) (Example how did I crack a wifi)
 
 ## See also
 
