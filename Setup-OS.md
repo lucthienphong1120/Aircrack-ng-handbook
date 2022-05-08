@@ -138,13 +138,3 @@ cd rtl8188eus
 sudo make && make install
 reboot
 ```
-
-## Monitor mode
-
-Go to [monitor.md](/Monitor.md)
-
-
-
-
-
-
