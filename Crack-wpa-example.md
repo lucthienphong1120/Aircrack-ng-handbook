@@ -11,10 +11,11 @@ iwconfig
 ![image](https://user-images.githubusercontent.com/90561566/166419875-330952f9-ce4a-416d-b403-ec2d39ecc3dc.png)
 
 ```
+airmon-ng check kill
 airmon-ng start <iface>
 ```
 
-![image](https://user-images.githubusercontent.com/90561566/166419967-2d8d1bd2-eb49-40b7-b46f-cf52497eba4b.png)
+![image](https://user-images.githubusercontent.com/90561566/167644236-e2f6fab8-8d12-4e0c-aebf-7d98e95e88c3.png)
 
 ```
 airodump-ng <iface>
