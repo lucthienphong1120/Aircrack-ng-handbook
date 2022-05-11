@@ -19,3 +19,7 @@ You can jump to other files if you already know
 > Wireless network auditor [Wifite](https://github.com/lucthienphong1120/wifite2)
 
 > Multi-use bash script to audit wireless networks [airgeddon](https://github.com/lucthienphong1120/airgeddon)
+
+> Networks reconnaissance and MITM attacks [bettercap](https://github.com/bettercap/bettercap)
+
+> The Rogue Access Point Framework [Wifiphisher](https://github.com/wifiphisher/wifiphisher)
