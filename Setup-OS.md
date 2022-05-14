@@ -16,11 +16,12 @@ Here will show all your wifi card parameters
 ### Check connect:
 
 ```
-ifconfig
 iwconfig
 ```
 
-![image](https://user-images.githubusercontent.com/90561566/163680598-fff970c5-959a-45f5-a0f5-d448f5b712e1.png)
+![image](https://user-images.githubusercontent.com/90561566/168417839-476e7b37-9889-4349-a04e-d1dfd8ada697.png)
+
+when it first connects, it's usually mode: auto, it's actually mode: manager
 
 ### See information:
 
@@ -29,7 +30,7 @@ lsusb
 lsusb -D /dev/bus/usb/<bus>/<device>
 ```
 
-![image](https://user-images.githubusercontent.com/90561566/163680503-3f9c38f0-185e-4144-bef9-0c694020c3e7.png)
+![image](https://user-images.githubusercontent.com/90561566/168417917-4758a81d-1823-44e5-92fd-79b2212ec6a5.png)
 
 ### Setup OS:
 
