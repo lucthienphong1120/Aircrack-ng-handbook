@@ -14,7 +14,7 @@ You can jump to other files if you already know
 
 > Install driver for chipset [rtl8188fu](https://github.com/lucthienphong1120/rtl8188fu)
 
-> Common User Passwords Profiler Passlist Generator [Cupp](https://github.com/lucthienphong1120/cupp)
+> User Passwords Profiler Passlist Generator [Cupp](https://github.com/lucthienphong1120/cupp)
 
 > Wifi deauthencation tools [xDeauth](https://github.com/lucthienphong1120/xDeauth)
 
