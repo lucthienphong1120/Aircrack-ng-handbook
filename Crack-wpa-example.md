@@ -124,6 +124,9 @@ airmon-ng stop <iface>
 service NetworkManager restart
 ```
 
+![image](https://user-images.githubusercontent.com/90561566/168418601-6af69920-10bc-47ea-b5d7-7d5fc0ea3017.png)
+
+
 
 
 
