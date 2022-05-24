@@ -26,4 +26,4 @@ You can jump to other files if you already know
 
 > The Rogue Access Point Framework [wifiphisher](https://github.com/wifiphisher/wifiphisher)
 
-> Hostapd create wifi rogue with password and Wi-Fi attacks [roguehostapd](https://github.com/lucthienphong1120/roguehostapd)
+> Create AP with password encryption and internet connection [wifi-hotspot](https://github.com/lucthienphong1120/wifi-hotspot)
