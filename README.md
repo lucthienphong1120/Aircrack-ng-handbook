@@ -18,12 +18,12 @@ You can jump to other files if you already know
 
 > Wifi deauthencation tools [xDeauth](https://github.com/lucthienphong1120/xDeauth)
 
-> Wireless network auditor [Wifite](https://github.com/lucthienphong1120/wifite2)
+> Wireless network auditor [wifite](https://github.com/lucthienphong1120/wifite2)
 
 > Multi-use bash script to audit wireless networks [airgeddon](https://github.com/lucthienphong1120/airgeddon)
 
 > Networks reconnaissance and MITM attacks [bettercap](https://github.com/bettercap/bettercap)
 
-> The Rogue Access Point Framework [wifiphisher](https://github.com/wifiphisher/wifiphisher)
+> The Rogue Access Point Framework [wifiphisher](https://github.com/lucthienphong1120/wifiphisher)
 
 > Create AP with password encryption and internet connection [wifi-hotspot](https://github.com/lucthienphong1120/wifi-hotspot)
