@@ -23,7 +23,7 @@ airodump-ng <iface>
 
 ![image](https://user-images.githubusercontent.com/90561566/168418114-4d4e8f16-58ec-4358-bc99-dd625f4e7d26.png)
 
-i will choose target is `Quang Minh 2G`, CH `11`, bssid `5C:1A:6F:88:19:19`
+i will choose target is `Quang Minh 2G`, CH `11`, bssid `5C:1A:6F:88:19:19` to monitor close
 
 ```
 airodump-ng -c <CH> --bssid <bssid> -w out <iface>
