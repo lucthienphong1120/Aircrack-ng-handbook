@@ -16,7 +16,7 @@ You can jump to other files if you already know
 
 > User Passwords Profiler Passlist Generator [Cupp](https://github.com/lucthienphong1120/cupp)
 
-> [Crunch](https://www.kali.org/tools/crunch)
+> Generate a dictionary file containing words [Crunch](https://www.kali.org/tools/crunch)
 
 > Wifi deauthencation tools [xDeauth](https://github.com/lucthienphong1120/xDeauth)
 
