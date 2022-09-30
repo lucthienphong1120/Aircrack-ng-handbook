@@ -79,7 +79,7 @@ or redirect directly from crunch
 crunch <min> <max> <charset> -t <pattern> | aircrack-ng -w- out*.cap
 ```
 
-![image](https://user-images.githubusercontent.com/90561566/166444763-a0cb15e0-309f-430e-bc6d-ce92e7863f0e.png)
+![image](https://user-images.githubusercontent.com/90561566/193245022-8c0a5de2-32c6-4b34-bb8d-30dc8ce51521.png)
 
 ---
 
