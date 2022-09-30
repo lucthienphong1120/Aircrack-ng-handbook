@@ -16,6 +16,8 @@ You can jump to other files if you already know
 
 > User Passwords Profiler Passlist Generator [Cupp](https://github.com/lucthienphong1120/cupp)
 
+> [Crunch](https://www.kali.org/tools/crunch)
+
 > Wifi deauthencation tools [xDeauth](https://github.com/lucthienphong1120/xDeauth)
 
 > Wireless network auditor [wifite](https://github.com/lucthienphong1120/wifite2)
