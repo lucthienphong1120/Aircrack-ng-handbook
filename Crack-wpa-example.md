@@ -79,6 +79,8 @@ or redirect directly from crunch
 crunch <min> <max> <charset> -t <pattern> | aircrack-ng -w- out*.cap
 ```
 
+add `--bssid 5C:1A:6F:88:19:19` if there is some error cann't identify bssid
+
 ![image](https://user-images.githubusercontent.com/90561566/193245022-8c0a5de2-32c6-4b34-bb8d-30dc8ce51521.png)
 
 speed of cracking about 1kp/s at least depend on your hardware processor (normally about 2-3kp/s)
