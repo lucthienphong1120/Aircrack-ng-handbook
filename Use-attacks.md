@@ -83,7 +83,7 @@ airolib-ng crackwpa --batch
 aircrack-ng -r crackwpa out*.cap
 ```
 
-## Brute force tools
+## Passlist Generation tools
 
 Aircrack often uses brute force with some other tools as follows:
 
