@@ -81,6 +81,8 @@ crunch <min> <max> <charset> -t <pattern> | aircrack-ng -w- out*.cap
 
 ![image](https://user-images.githubusercontent.com/90561566/193245022-8c0a5de2-32c6-4b34-bb8d-30dc8ce51521.png)
 
+speed of cracking about 1kp/s at least depend on your hardware processor
+
 ---
 
 but i will use database to speed up the attack
@@ -115,7 +117,7 @@ now crack with database, you will be surprised
 aircrack-ng -r crackwpa out*.cap
 ```
 
-done! there is the password (crack speed is about 36 GB/s)
+done! there is the password (crack speed is about 36kp/s)
 
 ![image](https://user-images.githubusercontent.com/90561566/166684325-e337e6cd-f376-4172-91a2-617a80a3156c.png)
 
@@ -125,13 +127,4 @@ service NetworkManager restart
 ```
 
 ![image](https://user-images.githubusercontent.com/90561566/168418601-6af69920-10bc-47ea-b5d7-7d5fc0ea3017.png)
-
-
-
-
-
-
-
-
-
 
