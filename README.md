@@ -29,3 +29,5 @@ You can jump to other files if you already know
 > The Rogue Access Point Framework [wifiphisher](https://github.com/lucthienphong1120/wifiphisher)
 
 > Create AP with password encryption and internet connection [wifi-hotspot](https://github.com/lucthienphong1120/wifi-hotspot)
+
+> Vietnamese wordlists - Most common vietnamese password collection [wordlists-vi](https://github.com/lucthienphong1120/wordlists-vi)
